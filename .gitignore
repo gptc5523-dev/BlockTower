@@ -1,0 +1,38 @@
+# Local notes and archives (internal: this repository is public)
+MEMO.md
+docs/
+Backups/
+.superpowers/
+.DS_Store
+
+# Unreal prototype (replaced by Unity)
+Unreal/
+
+# Generated
+Server/node_modules/
+CAD/tmp/
+CAD/GLB/
+CAD/STEP/
+__pycache__/
+*.pyc
+*.blend1
+
+# design-map runtime data
+design-map/password.hash
+design-map/map.json
+
+# Unity
+Unity/BlockTower/[Ll]ibrary/
+Unity/BlockTower/[Tt]emp/
+Unity/BlockTower/[Ll]ogs/
+Unity/BlockTower/[Oo]bj/
+Unity/BlockTower/[Bb]uild/
+Unity/BlockTower/[Bb]uilds/
+Unity/BlockTower/UserSettings/
+Unity/BlockTower/.utmp/
+Unity/BlockTower/.vscode/
+Unity/BlockTower/*.csproj
+Unity/BlockTower/*.sln
+Unity/BlockTower/*.slnx
+*.apk
+*.keystore

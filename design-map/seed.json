@@ -1,0 +1,40 @@
+{
+ "nodes": [
+  {"id": "root", "label": "내 게임", "kind": "root", "status": "review", "detail": "언리얼 3D 사이드 프로젝트. 간단하지만 디테일 최우선."},
+
+  {"id": "cond", "label": "조건", "kind": "group", "status": "done", "detail": "내가 원하는 것"},
+  {"id": "cond-3d", "label": "3D", "kind": "item", "status": "done", "detail": "3D 게임"},
+  {"id": "cond-input", "label": "키보드 + 마우스", "kind": "item", "status": "done", "detail": "이동: W/A/S/D\n마우스: 시점(카메라) 조작"},
+  {"id": "cond-simple", "label": "처음엔 간단하게", "kind": "item", "status": "done", "detail": "작은 범위로 시작"},
+  {"id": "cond-detail", "label": "디테일 최우선", "kind": "item", "status": "done", "detail": "조작감(가속·감속, 카메라 반응), 사운드, 이펙트, UI 마감까지"},
+
+  {"id": "env", "label": "개발 환경", "kind": "group", "status": "done", "detail": "Mac 기준"},
+  {"id": "env-ue", "label": "Unreal Engine 5.8", "kind": "item", "status": "done", "detail": "/Users/Shared/Epic Games/UE_5.8\nMetaHuman, MCPClientToolset 플러그인 포함"},
+  {"id": "env-xcode", "label": "Xcode + Metal", "kind": "item", "status": "done", "detail": "Mac 빌드용"},
+  {"id": "env-blender", "label": "Blender (MCP)", "kind": "item", "status": "done", "detail": "3D 에셋 제작. 생성 모델은 뼈대·애니메이션이 없음 → 사람 캐릭터는 언리얼 마네킹 + 기본 애니메이션 세트가 현실적"},
+
+  {"id": "rule", "label": "진행 원칙", "kind": "group", "status": "done", "detail": ""},
+  {"id": "rule-design", "label": "설계 먼저", "kind": "item", "status": "done", "detail": "대화로 설계를 끝낸 뒤, 내가 \"만들자\"고 하면 그때 제작 시작"},
+
+  {"id": "genre", "label": "장르 후보", "kind": "group", "status": "review", "detail": "애니메이션 부담이 적고 디테일을 끝까지 올릴 수 있는 것 위주"},
+  {"id": "g-ball", "label": "구르는 공 플랫포머 ⭐", "kind": "item", "status": "review", "detail": "WASD로 공을 굴려 장애물 코스 통과, 마우스로 카메라.\n디테일: 관성·마찰·경사 가속, 재질별 굴림 소리/튐, 착지 찌그러짐, 표면 반사\n처음 범위: 스테이지 3개 + 타임어택"},
+  {"id": "g-island", "label": "섬 탐험 + 수집", "kind": "item", "status": "review", "detail": "3인칭 마네킹으로 섬을 돌며 조각 수집.\n디테일: 시간대 조명, 바람에 풀, 파도·발소리\n처음 범위: 섬 1개 + 조각 10개"},
+  {"id": "g-topdown", "label": "탑다운 로봇 슈터", "kind": "item", "status": "review", "detail": "WASD 이동 + 마우스 조준·사격.\n디테일: 히트스톱, 넉백, 화면 흔들림, 파괴 연출\n처음 범위: 아레나 1개 + 웨이브 5개"},
+  {"id": "g-puzzle", "label": "1인칭 물리 퍼즐", "kind": "item", "status": "review", "detail": "물체를 집고 던지고 쌓아서 문 열기.\n디테일: 무게감, 충돌음, 조명, 퍼즐 해결 연출\n처음 범위: 방 5개"},
+  {"id": "g-fps", "label": "FPS", "kind": "item", "status": "dropped", "detail": "검토 후 제외 (2026-10-23)"},
+
+  {"id": "todo", "label": "정할 것", "kind": "group", "status": "review", "detail": ""},
+  {"id": "todo-view", "label": "시점", "kind": "item", "status": "review", "detail": "1인칭 / 3인칭 / 탑뷰"},
+  {"id": "todo-code", "label": "개발 방식", "kind": "item", "status": "review", "detail": "C++ / 블루프린트"},
+  {"id": "todo-art", "label": "아트 스타일", "kind": "item", "status": "review", "detail": ""}
+ ],
+ "edges": [
+  {"from": "root", "to": "cond"}, {"from": "cond", "to": "cond-3d"}, {"from": "cond", "to": "cond-input"},
+  {"from": "cond", "to": "cond-simple"}, {"from": "cond", "to": "cond-detail"},
+  {"from": "root", "to": "env"}, {"from": "env", "to": "env-ue"}, {"from": "env", "to": "env-xcode"}, {"from": "env", "to": "env-blender"},
+  {"from": "root", "to": "rule"}, {"from": "rule", "to": "rule-design"},
+  {"from": "root", "to": "genre"}, {"from": "genre", "to": "g-ball"}, {"from": "genre", "to": "g-island"},
+  {"from": "genre", "to": "g-topdown"}, {"from": "genre", "to": "g-puzzle"}, {"from": "genre", "to": "g-fps"},
+  {"from": "root", "to": "todo"}, {"from": "todo", "to": "todo-view"}, {"from": "todo", "to": "todo-code"}, {"from": "todo", "to": "todo-art"}
+ ]
+}
